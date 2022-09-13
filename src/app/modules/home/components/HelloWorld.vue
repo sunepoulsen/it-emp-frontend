@@ -6,7 +6,7 @@ defineProps<{
 
 <template>
   <div class="greetings">
-    <Prime-Panel header="Header">{{ msg }}</Prime-Panel>
+    <p-panel header="Header">{{ msg }}</p-panel>
     <h3>
       You’ve successfully created a project with
       <a target="_blank" href="https://vitejs.dev/">Vite</a> +

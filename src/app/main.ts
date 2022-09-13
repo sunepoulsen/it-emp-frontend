@@ -2,7 +2,9 @@ import { createApp } from "vue";
 import { createPinia } from "pinia";
 
 import PrimeVue from "primevue/config";
+import Button from "primevue/button";
 import Panel from "primevue/panel";
+import Toolbar from "primevue/toolbar";
 
 import "primevue/resources/themes/rhea/theme.css";
 import "primevue/resources/primevue.min.css";
@@ -18,6 +20,8 @@ app.use(createPinia());
 app.use(router);
 
 app.use(PrimeVue);
-app.component("Prime-Panel", Panel);
+app.component("p-button", Button);
+app.component("p-panel", Panel);
+app.component("p-toolbar", Toolbar);
 
 app.mount("#app");
